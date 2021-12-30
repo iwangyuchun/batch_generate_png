@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start_with_build": "node ./src/generate_png.js&&node ./src/generate_view.js&&node server.js",
+    "build":"node ./src/generate_png.js&&node ./src/generate_view.js",
     "start": "node server.js"
   },
   "author": "",
@@ -15,5 +16,8 @@
     "csvtojson": "^2.0.10",
     "express": "^4.17.2",
     "jsdom": "^19.0.0"
+  },
+  "devDependencies": {
+    "open": "^8.4.0"
   }
 }
